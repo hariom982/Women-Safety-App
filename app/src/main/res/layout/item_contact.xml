@@ -1,0 +1,32 @@
+<!-- res/layout/item_contact.xml -->
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="380dp"
+    android:layout_height="60dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center_horizontal"
+    app:cardBackgroundColor="#F5F5F5"
+    app:cardCornerRadius="8dp"
+    android:layout_marginTop="15dp"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/textViewContactName"
+        android:layout_width="321dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="15dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:text="Contact Name" />
+
+    <TextView
+        android:id="@+id/textViewContactPhoneNumber"
+        android:layout_width="321dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:layout_marginLeft="15dp"
+        android:textSize="15dp"
+        android:layout_marginTop="30dp"
+        android:text="Phone Number" />
+</androidx.cardview.widget.CardView>
