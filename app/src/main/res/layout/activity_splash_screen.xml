@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".splash_screen">
+
+    <TextView
+        android:id="@+id/womentv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="150dp"
+        android:fontFamily="@font/abril_fatface"
+        android:text="Women"
+        android:textColor="@color/black"
+        android:textSize="55dp" />
+
+    <ImageView
+        android:layout_width="256dp"
+        android:layout_height="327dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/splashscreen_logo"/>
+
+    <TextView
+        android:id="@+id/safetytv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:fontFamily="@font/abril_fatface"
+        android:textColor="@color/black"
+        android:text="Safety  App"
+        android:textSize="50dp" />
+
+</LinearLayout>

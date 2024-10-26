@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/addname"
+        android:layout_width="match_parent"
+        android:hint="Add Name"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"
+        android:layout_height="48dp"
+        android:inputType="textPersonName" />
+    <EditText
+        android:id="@+id/addnewcontact"
+        android:layout_width="match_parent"
+        android:hint="Add New Contact"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:layout_height="48dp"
+        android:inputType="text|phone" />
+</LinearLayout>

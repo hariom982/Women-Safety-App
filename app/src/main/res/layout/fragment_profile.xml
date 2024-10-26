@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:layout_gravity="center_vertical"
+    tools:context=".ui.profile">
+
+
+    <ImageView
+        android:id="@+id/profilepic"
+        android:layout_width="171dp"
+        android:layout_height="181dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="60dp"
+        android:src="@drawable/baseline_account_circle_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/uname"
+        android:layout_width="279dp"
+        android:layout_height="47dp"
+        android:layout_below="@id/profilepic"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittextresfile"
+        android:backgroundTint="#F5F5F5"
+        android:gravity="center"
+        android:text="Name"
+        android:textColor="@color/black"
+        android:textSize="20dp"
+
+        />
+
+    <TextView
+        android:id="@+id/uemail"
+        android:layout_width="279dp"
+        android:layout_height="47dp"
+        android:layout_below="@id/uname"
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@drawable/edittextresfile"
+        android:backgroundTint="#F5F5F5"
+        android:gravity="center"
+        android:hint="Email Address"
+        android:textColor="@color/black"
+        android:textColorHint="@color/black"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/phoneno"
+        android:layout_width="279dp"
+        android:layout_height="47dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/edittextresfile"
+        android:backgroundTint="#F5F5F5"
+        android:gravity="center"
+        android:text="Mobile Number"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/signoutbtn"
+        android:layout_width="279dp"
+        android:layout_height="47dp"
+        android:layout_below="@id/phoneno"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/edittextresfile"
+        android:backgroundTint="#F5F5F5"
+        android:gravity="center"
+        android:text="Sign Out"
+        android:textColor="@color/white"
+       />
+
+
+</LinearLayout>
