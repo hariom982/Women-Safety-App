@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".karatechapters.chapter3_fragment">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mastering the Moves"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:textColor="#000000"
+        android:layout_margin="16dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Section 1: Punching and Blocking -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Work on your punching and blocking (15 minutes)"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginBottom="16dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/moves"
+                android:contentDescription="Punching and blocking techniques"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Essential punches include: straight punch, upper-cut, knife-hand, spear-hand, elbow strike, and backfist. Practice them in order and alternate hands."
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Key points:"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Blocking is crucial - practice as if defending against real punches\n\n• Use first two knuckles, aligning with forearm bones for strength\n\n• Common mistakes: crooked fist, punching too high, using shoulder instead of technique"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="32dp"/>
+
+            <!-- Section 2: Kicking -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. Practice kicking (15 minutes)"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginBottom="16dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/kicking"
+                android:contentDescription="Karate kicking techniques"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ten repetitions of any kick will help strengthen your legs. Focus beyond the target for maximum power, and practice fluid motion."
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Five basic karate kicks:"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Front snap kick: Swing foot forward like snapping a towel\n\n• Side snap kick: Similar to front snap kick, but to the side\n\n• Side trust kick: Lift foot to opposite knee, kick with hip forward\n\n• Back trust kick: Like side trust kick, but looking and kicking behind\n\n• Round kick: From cat stance, pull kicking leg up, swing hips, pivot, and snap back"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="32dp"/>
+
+            <!-- Section 3: Sparring -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. Start sparring (15+ minutes)"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginBottom="16dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/sparring"
+                android:contentDescription="Karate sparring practice"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Find a partner to practice with. Spar for 15 to 30 minutes to increase stamina, improve combination techniques, and develop defensive skills against multiple attacks."
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="32dp"/>
+
+            <!-- Section 4: Kata Practice -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4. Practice kata (practice form)"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginBottom="16dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/allkata"
+                android:contentDescription="Kata practice in karate"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Focus on one kata during each session. Master lower-level katas before progressing to more advanced forms."
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Concentrate on mastering individual katas\n\n• Revisit learned katas regularly\n\n• Gradually combine and increase difficulty of kata sequences"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="32dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

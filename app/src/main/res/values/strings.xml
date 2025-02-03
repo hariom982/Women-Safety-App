@@ -45,6 +45,25 @@
         libero vel nunc consequat, quis tincidunt nisl eleifend. Cras bibendum enim a justo luctus
         vestibulum. Fusce dictum libero quis erat maximus, vitae volutpat diam dignissim.
     </string>
+    <string name="personal_awareness"><b>1. Stay Alert:</b> Be aware of your surroundings and avoid distractions like texting or wearing headphones in unfamiliar or isolated areas.\n
+                                      \n<b>2. Trust Your Instincts:</b> If something feels off, trust your gut and leave the situation.</string>
+    <string name="self_defence">
+    <![CDATA[
+    <b>1. Carry Safety Tools:</b> Keep <u>pepper spray</u>, a personal alarm, or a whistle in an easily accessible place.
+    <br/><br/>
+    <b>2. Learn Basic Self-Defense:</b> Take self-defense classes to know how to protect yourself in emergencies.
+    ]]>
+</string>
+
+    <string name="home_safety"><b>1. Secure Your Home:</b> Lock all doors and windows, and avoid sharing your address with strangers.\n
+        \n<b>2. Screen Visitors:</b> Use a peephole or camera to verify visitors before opening the door.</string>
+
+    <string name="mental_phy._dependence"><b>1. Stay Confident:</b> Walk confidently and make eye contact to deter potential threats.\n
+\n<b>2. Keep Backup Funds:</b> Carry a small amount of cash or an emergency credit card for unforeseen situations.</string>
+
+    <string name="danger"><b>1. Shout for Help:</b> Use your voice to draw attention to the situation.\n
+        \n<b>2. Run if Possible:</b> If it’s safe, leave the area and find help immediately.</string>
+
 
     <string name="default_web_client_id">326690018479-75nhka8drddb3a4k88v6tp42sbo7tohl.apps.googleusercontent.com</string>
     <!-- TODO: Remove or change this placeholder text -->

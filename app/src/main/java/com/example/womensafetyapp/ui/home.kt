@@ -62,9 +62,9 @@ class home : Fragment() {
     }
     @SuppressLint("SuspiciousIndentation")
     private fun performTransaction() {
-    val transaction = requireActivity().supportFragmentManager.beginTransaction()
+    val transaction = parentFragmentManager.beginTransaction()
         transaction.replace(R.id.fragment_container,emergencycontacts())
+        transaction.addToBackStack(null)
         transaction.commit()
-        transaction.addToBackStack("replacement")
       }
     }

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".karatechapters.chapter1_fragment">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Getting in the Zone"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="28sp"
+        android:layout_margin="16dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Section 1: Meditation -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Meditate (5+ minutes)"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/meditation"
+                android:contentDescription="Meditation visualization"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Clear your mind of all thoughts; concentrate on breathing in through the nose, out through the mouth. Steady deep breaths and a clear mind will prepare you to learn Karate."
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Forget school. Forget work. Forget family, problems, everything -- visualize them evaporating before your eyes. Once everything is gone, you should see an empty room, and in the center of the empty room, a ball of flame begins growing from the emptiness."
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="32dp"/>
+
+            <!-- Section 2: Warm Up -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. Warm up (10 minutes)"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img"
+                android:contentDescription="Warm-up exercises demonstration"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Start off by running in place or around the block for about 5 minutes; plus about 5 minutes (or 20 reps each) of push-ups, sit-ups (or crunches), leg lifts, and reverse push-ups."
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Warming up is vital to your muscles' ability to do work. If you don't get them loose and ready before you start your training and stretching, then they will go on strike against you and even basic moves will be tough to execute properly."
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="32dp"/>
+
+            <!-- Section 3: Stretch -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. Stretch (15 minutes)"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_1"
+                android:contentDescription="Stretching exercises demonstration"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Stretching all major muscle groups first is essential for a loose and limber body. In Karate, stretching the legs is crucial to keep yourself injury-free."
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Stretching comes after warming up. When your muscles have heated up, that's when they'll be most receptive to stretching -- when stretching will be the safest and most effective."
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="32dp"/>
+
+            <!-- Section 4: Philosophy -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4. Understand the Philosophy"
+                android:textSize="24sp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginBottom="16dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/img_2"
+                android:contentDescription="Karate philosophy visualization"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="To the untrained observer, karate may look like it's about showy displays of violence. In fact, it's the polar opposite. Karate is about peace and, what's more, peace of mind."
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• This is an art form that involves the mind and spirit as much as the body. All three must develop simultaneously for the practitioner to truly master this sport.\n\n• All of the martial arts begin and end with courtesy. There is very little that is selfish about karate. It is believed that in your devotion there is reward."
+                android:textSize="14sp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="32dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

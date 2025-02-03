@@ -59,16 +59,29 @@
         android:layout_gravity="center_horizontal"
         tools:layout_editor_absoluteX="66dp" />
 
-    <Button
-        android:id="@+id/signinbtn"
+    <FrameLayout
         android:layout_width="279dp"
         android:layout_height="47dp"
         android:layout_marginTop="27dp"
-        android:background="@drawable/edittextresfile"
-        android:backgroundTint="#917EEC"
-        android:text="Login Now"
-        android:layout_gravity="center_horizontal"
-        tools:layout_editor_absoluteX="66dp" />
+        android:layout_gravity="center_horizontal">
+
+        <Button
+            android:id="@+id/signinbtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/edittextresfile"
+            android:backgroundTint="#917EEC"
+            android:text="Login Now"
+            android:layout_gravity="center" />
+
+        <ProgressBar
+            android:id="@+id/loginProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+    </FrameLayout>
+
     <TextView
         android:id="@+id/textview5"
         android:layout_width="wrap_content"
@@ -81,16 +94,28 @@
 
 
 
-    <com.google.android.gms.common.SignInButton
-        android:id="@+id/googlebtn"
+    <FrameLayout
         android:layout_width="279dp"
         android:layout_height="47dp"
         android:layout_marginTop="8dp"
-        android:background="@drawable/mybutton"
-        android:backgroundTint="@null"
-        android:text="Continue with Google"
-        android:layout_gravity="center_horizontal"
-        tools:layout_editor_absoluteX="67dp" />
+        android:layout_gravity="center_horizontal">
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/googlebtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/mybutton"
+            android:backgroundTint="@null"
+            android:text="Continue with Google"
+            android:layout_gravity="center" />
+
+        <ProgressBar
+            android:id="@+id/googleProgressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="gone" />
+    </FrameLayout>
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -120,5 +145,7 @@
             android:textColor="@color/purple_200"
             android:textSize="15dp" />
     </LinearLayout>
+
+
 
 </LinearLayout>

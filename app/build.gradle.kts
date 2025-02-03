@@ -48,8 +48,8 @@ dependencies {
     implementation(libs.androidx.lifecycle.viewmodel.ktx)
     implementation(libs.androidx.navigation.fragment.ktx)
     implementation(libs.androidx.navigation.ui.ktx)
-    implementation ("com.google.android.gms:play-services-maps:18.0.0")
-    implementation ("com.google.android.gms:play-services-location:21.0.1")
+    implementation("com.google.android.gms:play-services-maps:18.0.0")
+    implementation("com.google.android.gms:play-services-location:21.0.1")
     implementation(libs.androidx.activity)
     implementation(libs.firebase.auth)
     implementation(libs.firebase.database)
@@ -65,6 +65,11 @@ dependencies {
 
     // Also add the dependency for the Google Play services library and specify its version
     implementation("com.google.android.gms:play-services-auth:21.2.0")
+    implementation("androidx.viewpager2:viewpager2:1.0.0")
+
+    //gif imageview
+    implementation("pl.droidsonroids.gif:android-gif-drawable:1.2.17")
+
     androidTestImplementation(libs.androidx.espresso.core)
 
 }

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".karatechapters.chapter2_fragment">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Part 2: Mastering Stances, Balance, and Power"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:textColor="#000000"
+        android:layout_margin="16dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- Section 1: Basic Stances -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1. Get the basic stances down"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginBottom="16dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/stances"
+                android:contentDescription="Basic karate stances demonstration"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yeah, yeah, yeah, you wanna get to the fun stuff. Unfortunately, your kicks, strikes, and blocks will not be effective if you don't have your stance right. You wouldn't expect to be a great baseball player if you held your bat the wrong way, would you? Nope. The basics are what truly make a great karateka (karate practitioner)."
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Different types of stances:"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Natural/walking stance (shizentai-dachi): Front foot pointing forward, back foot at 45-degree angle, feet at walking width\n\n• Front stance (zenkutsu-dachi): Similar to natural stance but feet further apart, weight on front leg\n\n• Cat/back stance (nekoashi-dachi): Like walking stance but weight on back leg, front heel may be raised"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="32dp"/>
+
+            <!-- Section 2: Ready Stance -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2. Start with the ready stance"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginBottom="16dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/ready"
+                android:contentDescription="Ready stance positions"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The stances above are fighting stances. However, at the beginning of any spar, you'll need to begin with the ready stance. You have three basic options:"
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Fukyugata series: Heels together, toes pointing outward at 60-degree angle\n\n• Pinan series: Feet at shoulder width, toes pointing outward at 45-degree angle\n\n• Naihanchi series: Feet directly together and parallel"
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="32dp"/>
+
+            <!-- Section 3: Balance -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3. Be aware of your balance"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginBottom="16dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/stance1"
+                android:contentDescription="Balance demonstration in karate"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Karate isn't exactly something drunk people would be good at, and for good reason -- it takes an immense ability to balance. That's part of the reason the stances are so important! They center your body, allowing you to be fluid while simultaneously strong."
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Always think about your center gravity. If you spread your feet, you lower it, proving yourself stability and more bang for your attack. But if you lower it too much, you lose mobility and speed.\n\n• While having balance is important, when you start having to defend yourself, you'll need to be able to shift that balance quite quickly as well."
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="32dp"/>
+
+            <!-- Section 4: Power and Speed -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4. Concentrate on your power and speed"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:layout_marginBottom="16dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/balance"
+                android:contentDescription="Power and speed demonstration in karate"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="There are plenty of people (read: gym rats) who lift hundreds and hundreds of pounds but yet would not excel at karate. It is not about muscle -- it's about power and speed."
+                android:textSize="16sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="8dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="The two are highly connected. A longer route to your target will help you develop more speed and thus power. If you use your entire body, you will have more power behind your attack, and necessarily employ more speed. However, think of karate not as being able to move a large object, but being able to move a small object quickly and with detailed precision."
+                android:textSize="14sp"
+                android:textColor="#000000"
+                android:layout_marginBottom="32dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

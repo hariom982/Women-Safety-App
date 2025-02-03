@@ -2,13 +2,17 @@ package com.example.womensafetyapp
 
 import android.annotation.SuppressLint
 import android.content.Intent
+import android.os.Build
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import android.widget.ProgressBar
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
@@ -28,20 +32,29 @@ class signin_page : AppCompatActivity() {
     private lateinit var database: DatabaseReference
     private var currentUser: FirebaseUser? = null
     lateinit var gso: GoogleSignInOptions
-    @SuppressLint("MissingInflatedId")
-//    override fun onStart() {
-//        super.onStart()
-//        val user = auth.currentUser
-//        if (user != null) {
-//            val intent = Intent(this, MainActivity::class.java)
-//            startActivity(intent)
-//        }
-//    }
+    private lateinit var loginProgressBar: ProgressBar
+    private lateinit var googleProgressBar: ProgressBar
+    @SuppressLint("MissingInflatedId", "SuspiciousIndentation")
+
+        override fun onStart() {
+        super.onStart()
+        val user = auth.currentUser
+        if (user != null) {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
+    }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         supportActionBar?.hide()
         enableEdgeToEdge()
         setContentView(R.layout.activity_signin_page)
+        //for changing status bar color
+        window.statusBarColor = ContextCompat.getColor(this, R.color.white)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
+        }
+
         auth = FirebaseAuth.getInstance()
         currentUser = auth.currentUser
         database = FirebaseDatabase.getInstance().getReference("Users")
@@ -50,6 +63,10 @@ class signin_page : AppCompatActivity() {
         val loginbtn = findViewById<Button>(R.id.signinbtn)
         val signuptv = findViewById<TextView>(R.id.signuptv)
         val googlebtn = findViewById<SignInButton>(R.id.googlebtn)
+
+        // Add progress bar references
+        loginProgressBar = findViewById(R.id.loginProgressBar)
+        googleProgressBar = findViewById(R.id.googleProgressBar)
 
         //signing using email and password
         loginbtn.setOnClickListener(){
@@ -60,6 +77,11 @@ class signin_page : AppCompatActivity() {
                 Toast.makeText(this, "Email and Password can't be blank", Toast.LENGTH_SHORT).show()
                 return@setOnClickListener
             }
+
+            // Show progress bar, hide button text
+            loginbtn.text = ""
+            loginProgressBar.visibility = View.VISIBLE
+
             auth.signInWithEmailAndPassword(email, pass).addOnCompleteListener(this) {
                 if (it.isSuccessful) {
                     val currentUser = auth.currentUser
@@ -69,14 +91,19 @@ class signin_page : AppCompatActivity() {
                             .addOnCompleteListener { dbTask ->
                                 if (dbTask.isSuccessful) {
                                     Toast.makeText(this, "Sign-Up Successful", Toast.LENGTH_SHORT).show()
+                                    loginProgressBar.visibility = View.GONE
                                     val intent = Intent(this, MainActivity::class.java)
                                     startActivity(intent)
                                 } else {
+                                    loginProgressBar.visibility = View.GONE
+                                    loginbtn.text = "Login In"
                                     Toast.makeText(this, "Failed to save user data: ${dbTask.exception?.localizedMessage}", Toast.LENGTH_SHORT).show()
                                 }
                             }
                     }
                 } else
+                    loginProgressBar.visibility = View.GONE
+                    loginbtn.text = "Sign In"
                     Toast.makeText(this, "Log In failed ", Toast.LENGTH_SHORT).show()
             }
         }
@@ -88,6 +115,8 @@ class signin_page : AppCompatActivity() {
         createRequest()
 
         googlebtn.setOnClickListener(){
+            googlebtn.visibility = View.GONE
+            googleProgressBar.visibility = View.VISIBLE
             signIn();
         }
     }
@@ -115,6 +144,7 @@ class signin_page : AppCompatActivity() {
                 firebaseAuthWithGoogle(account)
             }
             catch (e: ApiException) {
+                googleProgressBar.visibility = View.GONE
                 // Google Sign In failed, update UI appropriately
                 Toast.makeText(this, "Login Failed", Toast.LENGTH_SHORT)
                     .show()
@@ -125,6 +155,9 @@ class signin_page : AppCompatActivity() {
         val credential = GoogleAuthProvider.getCredential(account.idToken, null)
         auth.signInWithCredential(credential)
             .addOnCompleteListener(this) { task ->
+                // Reset Google button
+                googleProgressBar.visibility = View.GONE
+                findViewById<SignInButton>(R.id.googlebtn).visibility = View.VISIBLE
                 if (task.isSuccessful) {
                     val intent = Intent(this, MainActivity::class.java)
                     startActivity(intent)

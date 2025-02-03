@@ -13,7 +13,7 @@
 
     <fragment
         android:id="@+id/panic_mode"
-        android:name="com.example.womensafetyapp.ui.panicmode"
+        android:name="com.example.womensafetyapp.ui.PanicModeFragment"
         android:label="Panic Mode"
         tools:layout="@layout/fragment_panicmode" />
 

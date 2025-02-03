@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Beginner Karate Routine"
+            android:textSize="28dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Warm-Up"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5 minutes of skipping\n\nHead Circles x10 each direction\n\nArm Circles x10 forward and backward\n\nLeg Swings x10 each side\n\nAnkle Circles x10 each side\n\nHip Circles x10 each side"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Workout"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="10 Jabs\n\n10 Reverse Punches\n\n10 Reverse Punch\n\n10 Fore Punch\n\n10 Upper Block\n\n10 Down Block\n\n10 High Punch from Horse Stance\n\n10 Low Punch from Horse Stance\n\n10 Front Kicks\n\n10 Thrust Kicks"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:paddingBottom="8dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cool Down"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="30 seconds Seated Hamstring stretch (each side)\n\n30 seconds Lunge Stretch (each side)\n\n30 seconds Standing Triceps Stretch (each side)\n\n30 seconds Quadriceps Stretch (each side)"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:paddingBottom="16dp" />
+    </LinearLayout>
+</ScrollView>

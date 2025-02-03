@@ -72,7 +72,7 @@ class map : Fragment(),OnMapReadyCallback {
         val markerOptions = MarkerOptions().position(latLng).title("I am here")
         googleMap.mapType = GoogleMap.MAP_TYPE_HYBRID
         googleMap.animateCamera(CameraUpdateFactory.newLatLng(latLng))
-        googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng,20f))
+        googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng,15f))
         googleMap.maxZoomLevel
         googleMap.addMarker(markerOptions)
     }

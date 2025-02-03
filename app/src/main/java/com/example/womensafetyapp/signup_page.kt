@@ -2,13 +2,16 @@ package com.example.womensafetyapp
 
 import android.annotation.SuppressLint
 import android.content.Intent
+import android.os.Build
 import android.os.Bundle
+import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import androidx.core.content.ContextCompat
 import com.google.firebase.Firebase
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseUser
@@ -27,6 +30,11 @@ class signup_page : AppCompatActivity() {
 
         enableEdgeToEdge()
         setContentView(R.layout.activity_signup_page)
+        //for changing status bar color
+        window.statusBarColor = ContextCompat.getColor(this, R.color.white)
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
+            window.decorView.systemUiVisibility = View.SYSTEM_UI_FLAG_LIGHT_STATUS_BAR
+        }
         auth = Firebase.auth
         currentUser = auth.currentUser
         database = FirebaseDatabase.getInstance().reference
@@ -84,5 +92,10 @@ class signup_page : AppCompatActivity() {
         }
 
     }
+    @SuppressLint("MissingSuperCall")
+    override fun onBackPressed() {
+        finishAffinity() // Closes all activities and exits the app
+    }
+
 
 }
